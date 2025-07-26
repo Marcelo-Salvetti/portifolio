@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <nav>
+            <a href="#" class="logo">Meu Portfólio</a>
+            <ul class="nav-links">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção Hero -->
+    <section class="hero" id="sobre">
+        <div class="hero-content">
+            <h1>Olá, eu sou <span>Marcelo</span></h1>
+            <p>Desenvolvedor Front-End</p>
+            <p>Bem-vindo ao meu portfólio! Aqui você encontrará alguns dos meus projetos e habilidades.</p>
+            <p>Estou sempre aprendendo e buscando novos desafios.</p>
+            <a href="#projetos" class="btn">Ver Projetos</a>
+        </div>
+    </section>
+
+    <!-- Seção Habilidades -->
+    <section class="skills" id="habilidades">
+        <h2>Minhas Habilidades</h2>
+        <div class="skills-container">
+            <div class="skill-item">
+                <i class="fab fa-html5"></i>
+                <h3>HTML5</h3>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-css3-alt"></i>
+                <h3>CSS3</h3>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-js"></i>
+                <h3>JavaScript</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Projetos -->
+    <section class="projects" id="projetos">
+        <h2>Meus Projetos</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="images/projeto1.png" alt="Projeto 1">
+                <h3>Meu casamento</h3>
+                <p>Utilizando HTML5, CSS3 e JavaScript</p>
+                <a href="https://casamento-rosy.vercel.app/" class="project-link" target="_blank" rel="noopener noreferrer">Ver detalhes</a>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section class="contact" id="contato">
+        <div class="social-links">
+            <a href="https://github.com/Marcelo-Salvetti" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/marcelo-luiz-8500aa228" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/_marcelosalvetti" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Marcelo</p>
+    </footer>
+
+    <script>
+        // Scroll suave para links internos
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
